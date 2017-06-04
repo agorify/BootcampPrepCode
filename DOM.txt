@@ -1,0 +1,1 @@
+DOM is called the Document Object Model
