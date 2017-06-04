@@ -1,0 +1,56 @@
+Compound Selector:
+
+h1, h2, #abc {
+	Declarations ... 
+}
+
+in this case, the tag h1, h2 and id #abc will share the css declarations defined inside the {}
+
+Descendent Selector:
+
+#nav li {
+	Declarations ...
+}
+
+<ul id="nav">
+	<li>child</li>
+</ul>
+
+in this case, the tag li inside nav will be found and applied with css declarations defined. 
+
+Child Selector
+
+#list > li {
+	Declarations ...
+}
+
+<ul id="list">
+	<li>child
+		<ul><li>grandchild</li></ul>
+	</li>
+</ul>
+
+in this case, only qualified children will be applied with styles. Grandchildrenwill not be affected.
+
+Sibling Selector
+
+h3 + p {
+	Declarations ...
+}
+
+Selects only sibling elements that appear directly after the matching selector name. 
+
+<h3> H3 </h3>
+<p> abc </p>
+<p> not selected </p>
+
+Preceded Selectors
+
+.styleafter ~ h2 {
+	Declarations ...
+}
+
+Styles all matched elements preceding after the selector name. 
+<p class="styleafter">Class</p>
+<h2> h2 positioned after </h2>
+
