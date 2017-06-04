@@ -1,0 +1,10 @@
+ID over rules Class.
+Class over rules Type.
+Type over rules * (universal)
+
+The more specific a selector the more authority it has.
+
+If multiple classes are applied to the same element, the Class listed furthest 
+to the right over rules its neighbors to the left.
+
+"Last Man" rule: When conflicts with equal authority arise, CSS will listen to the last style it was told to apply.

@@ -54,3 +54,38 @@ Styles all matched elements preceding after the selector name.
 <p class="styleafter">Class</p>
 <h2> h2 positioned after </h2>
 
+
+Attribute Selector
+
+img[alt="Cat"] {
+	Declarations ...
+}
+
+Selects elements who have an attribute with matching value condition
+
+<img src="myimage.jpg" alt="Cat">
+
+More examples:
+
+a[href^="http"] ... starts with <a href="http://...">A</a>
+
+p[class$="dog"] ... ends with <p class="something dog">...</p>
+
+img[alt*="love"] ... Anywhere within <img src="heart.jpg" alt="I love you">
+
+p[class~="dog"] ... Space separated <p class="shelter dog hey"...</p>
+p[class|="dogs"] ... Dash separated <p class="new-dogs-today">...</p>
+
+Pseudo Class Selector
+
+a:link {}	untouched
+a:visited {}	Already visited
+a:hover {}	On mouse hover
+a:active {}	On mouse click
+
+p:first-child {}
+p:last-child {}
+
+<p> first </p>
+<p> lorem </p>
+<p> last </p>
