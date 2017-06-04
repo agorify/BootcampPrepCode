@@ -1,1 +1,6 @@
 DOM is called the Document Object Model
+
+DOM is a representation of the current view of the browser.
+Can be manipulated without reloading a page.
+
+HTML is only the initial representation of the page.
