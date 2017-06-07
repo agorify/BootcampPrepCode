@@ -4,3 +4,6 @@ DOM is a representation of the current view of the browser.
 Can be manipulated without reloading a page.
 
 HTML is only the initial representation of the page.
+
+window is the entire DOM object.
+document object represents any web page loaded in the browser.
